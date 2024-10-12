@@ -109,3 +109,124 @@ header {
     font-size: 1rem;
   }
 }
+
+
+.next-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.next-slide a {
+  font-size: 24px;
+  color: #323232;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.next-slide a:hover {
+  color: #323232;
+  transform: translateY(-5px);
+}
+
+.next-slide i {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.section-title span {
+  display: block;
+  font-size: 20px;
+  color: #211f1f;
+}
+
+.section-title h1 {
+  font-size: 36px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1a1818;
+}
+
+/* About container styling */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About text styling */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #181818;
+  text-align: justify;
+}
+
+.about-text p {
+  margin: 0;
+}
+
+.about-text strong {
+  font-weight: bold;
+  color: #323232;
+}
+
+.centered-text {
+  display: block;
+  text-align: center;
+  margin-top: 20px; /* Adds space above the centered text */
+  font-weight: bold; /* Optional: makes the text stand out more */
+}
+
+
+/* Animations */
+[data-aos="fade-left"] {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+[data-aos="zoom-in-down"] {
+  animation: zoomInDown 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 16px;
+  }
+}
