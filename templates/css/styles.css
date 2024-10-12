@@ -116,7 +116,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 2px 0;
 }
 
 .next-slide a {
@@ -128,7 +128,7 @@ header {
 
 .next-slide a:hover {
   color: #323232;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .next-slide i {
@@ -139,7 +139,7 @@ header {
 /* Section title */
 .section-title {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 110px;
   margin-bottom: 40px;
 }
 
@@ -156,7 +156,7 @@ header {
   color: #1a1818;
 }
 
-/* About container styling */
+
 .about-container {
   display: flex;
   justify-content: center;
@@ -167,7 +167,7 @@ header {
   padding: 20px;
 }
 
-/* About text styling */
+
 .about-text {
   max-width: 800px;
   margin: 0 auto;
@@ -193,9 +193,99 @@ header {
   font-weight: bold; 
 }
 
+/* Animations */
+[data-aos="fade-left"] {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+[data-aos="zoom-in-down"] {
+  animation: zoomInDown 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
   .about-text {
     font-size: 15px;
   }
+}
+
+.skills-card-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+.skills-card {
+  padding: 25px;
+  border: 2px ;
+  border: 2px solid #323232; 
+  border-radius: 15px;
+  width: 100%;
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-title h1 {
+  color: solid #323232;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  gap: 10px;
+}
+
+.skill i {
+  font-size: 3rem;
+}
+
+.skill h1 {
+  font-size: 1.2rem;
 }
