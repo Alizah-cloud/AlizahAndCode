@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 15px;
-  background-color: black;
-  color: white;
+  background-color:#DDD0C8;
+  color: #323232;
   font-family: Arial, sans-serif;
 }
 
@@ -21,33 +21,36 @@ header {
 }
 
 .navbar a {
-  color: white;
+  color: #323232;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   transition: 0.5s;
   padding: 12px;
-  border: 3px solid black;
+  border: 3px #DDD0C8;
   border-radius: 50%;
 }
 
 .navbar a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #323232;
   border-radius: 55%;
 }
 
 .main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-top: 60px;
-  text-align: center;
+  align-items: center;
+  flex-direction: row; 
+  width: 100%;
 }
 
 .main-img {
   width: 250px;
   height: 250px;
+  display: flex;
+  margin-top: 60px;
+  text-align: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -59,6 +62,8 @@ header {
 
 .title {
   margin-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .title h1 {
@@ -74,7 +79,9 @@ header {
 .social-links {
   display: flex;
   justify-content: center;
+  margin-top: 1px;
   gap: 20px;
+  clear: both;
 }
 
 .social-links a img {
