@@ -345,6 +345,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: translate(100%, 19%); 
   align-items: center;
 }
 
